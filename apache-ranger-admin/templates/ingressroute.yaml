@@ -1,0 +1,17 @@
+{{ if .Values.ingressRoutes.enabled }}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`{{ .Values.ingressRoutes.host }}`) && PathPrefix(`/`)
+      priority: 1
+      services:
+        - name: apache-ranger
+          port: 6080
+{{ end }}

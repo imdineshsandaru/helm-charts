@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache-ranger-deployment
+  labels:
+    app: apache-ranger
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apache-ranger
+  template:
+    metadata:
+      labels:
+        app: apache-ranger
+    spec:
+      containers:
+        - name: ranger-admin
+          image: egdsandaru/apache-ranger-admin:1.0.0
+          volumeMounts:
+            - name: install-config
+              mountPath: /opt/ranger-2.1.0-admin/install.properties
+              subPath: install.properties
+      volumes:
+        - name: install-config
+          configMap:
+            name: install-config
+status: {}
