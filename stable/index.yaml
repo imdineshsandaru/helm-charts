@@ -3,12 +3,12 @@ entries:
   apache-ranger:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-02T00:31:23.772896617+05:30"
+    created: "2023-04-02T09:11:11.785065612+05:30"
     description: A Helm chart for Apache Ranger
     digest: 2e6f4439dbffa12acacc6f9e1b426019ad6ee7a46560ff27e46e97af24ed8e71
     name: apache-ranger
     type: application
     urls:
-    - apache-ranger-admin/apache-ranger-0.1.0.tgz
+    - apache-ranger-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-02T00:31:23.77176346+05:30"
+generated: "2023-04-02T09:11:11.784463933+05:30"
