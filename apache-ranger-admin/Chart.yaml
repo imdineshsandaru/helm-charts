@@ -1,6 +1,6 @@
 apiVersion: v2
-name: apache-ranger
-description: A Helm chart for Apache Ranger
+name: apache-ranger-admin
+description: A Helm chart for Apache Ranger admin
 
 # A chart can be either an 'application' or a 'library' chart.
 #
