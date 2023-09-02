@@ -3,7 +3,17 @@ entries:
   apache-ranger-admin:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-09-02T18:07:03.335428234+05:30"
+    created: "2023-09-02T19:00:03.971802676+05:30"
+    description: A Helm chart for Apache Ranger admin
+    digest: bb84276b4dd768a2f610363f2ae32ab428c9ff00211bb6bb41fdc021138e85ec
+    name: apache-ranger-admin
+    type: application
+    urls:
+    - apache-ranger-admin-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2023-09-02T19:00:03.971312331+05:30"
     description: A Helm chart for Apache Ranger admin
     digest: 447818a3fafa21046283d586d54534f071fcc57d15e7966c5e8bee23322bb8eb
     name: apache-ranger-admin
@@ -11,4 +21,4 @@ entries:
     urls:
     - apache-ranger-admin-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-02T18:07:03.334748223+05:30"
+generated: "2023-09-02T19:00:03.956282755+05:30"
